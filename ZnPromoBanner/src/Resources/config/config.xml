@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Promo Banner Settings</title>
+        <input-field type="text-editor">
+            <name>content</name>
+            <label>Inhalt des Banners</label>
+        </input-field>
+    </card>
+    <card>
+        <input-field type="datetime">
+            <name>startingAt</name>
+            <label>Anzeige ab...</label>
+            <helpText>Anzeige gilt ab diesem Datum. Sofort sichtbar, wenn keine Angabe</helpText>
+        </input-field>
+    </card>
+    <card>
+        <input-field type="datetime">
+            <name>endsAt</name>
+            <label>Anzeige gilt bis diesem Datum. Immer sichtbar, wenn keine Angabe</label>
+        </input-field>
+    </card>
+    <card>
+        <input-field type="multi-select">
+            <name>displayAreas</name>
+            <options>
+                <option>
+                    <id>home</id>
+                    <name>Home</name>
+                </option>
+                <option>
+                    <id>content</id>
+                    <name>Listing, Detail, Blog, Landingpages</name>
+                </option>
+                <option>
+                    <id>system</id>
+                    <name>Kundenkonto, Checkout</name>
+                </option>
+            </options>
+            <label>Wo soll der Promobanner überall angezeigt werden?</label>
+        </input-field>
+    </card>
+    <card>
+        <title>Hintergrundfarbe</title>
+        <input-field type="text">
+            <name>bgcolor</name>
+            <label>Hintergrundfarbe in Hex (z.B. #ffffff)</label>
+        </input-field>
+    </card>
+</config>

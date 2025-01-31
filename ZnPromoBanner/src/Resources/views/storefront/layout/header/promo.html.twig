@@ -1,0 +1,11 @@
+{% block promo_banner %}
+    <div class="promobanner wrapped">
+        <div class="promobanner content"   
+        {% if page.header.extensions.promoBanner.bgcolor %} 
+            style="background-color: {{ page.header.extensions.promoBanner.bgcolor|raw }};"
+        {% endif %}
+        >
+            {{ page.header.extensions.promoBanner.content|raw }}
+        </div>
+    </div>
+{% endblock %}

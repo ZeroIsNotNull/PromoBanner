@@ -1,0 +1,40 @@
+{
+  "name": "zn/promo-banner",
+  "description": "Promo-Banner",
+  "version": "1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nima Sorouri"
+    }
+  ],
+  "require": {
+    "shopware/core": "6.5.*",
+    "google/apiclient": "^2.15.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zn\\PromoBanner\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Zn\\PromoBanner\\ZnPromoBanner",
+    "label": {
+      "de-DE": "PromoBanner",
+      "en-GB": "PromoBanner"
+    },
+    "description": {
+      "de-DE": "Promo Banner",
+      "en-GB": "Promo Banner"
+    },
+    "manufacturerLink": {
+      "de-DE": "",
+      "en-GB": ""
+    },
+    "supportLink": {
+      "de-DE": "",
+      "en-GB": ""
+    }
+  }
+}

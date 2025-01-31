@@ -1,0 +1,10 @@
+{% sw_extends '@Storefront/storefront/layout/header/header-minimal.html.twig' %}
+
+
+{% block layout_header_minimal_row %}
+    {% if page.header.extensions.promoBanner %}
+        {% sw_include '@Storefront/storefront/layout/header/promo.html.twig' %}
+    {% endif %}
+    {{ parent() }}
+{% endblock %}
+
